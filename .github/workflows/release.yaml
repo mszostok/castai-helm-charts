@@ -25,7 +25,7 @@ jobs:
           helm repo add vector https://helm.vector.dev
           helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
           helm repo add incubator https://charts.helm.sh/incubator
-          helm repo add elasticsearch https://helm.elastic.co  
+          helm repo add elasticsearch https://helm.elastic.co
           helm repo add grafana https://grafana.github.io/helm-charts
           helm repo add ollama https://otwld.github.io/ollama-helm
 
@@ -44,7 +44,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release evictor child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -53,7 +53,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release cluster-controller child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -62,7 +62,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release pod pinner child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -71,4 +71,4 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
