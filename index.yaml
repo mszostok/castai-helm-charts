@@ -215,6 +215,17 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/castai-spot-handler-0.25.0/castai-spot-handler-0.25.0.tgz
     version: 0.25.0
+  castai-workload-autoscaler:
+  - apiVersion: v2
+    appVersion: v0.26.0
+    created: "2025-02-03T20:11:53.531217+01:00"
+    description: CAST AI workload autoscaler.
+    digest: f54c354d59c419c7aea4115f5c9e7276ad119c2b6c7eba2b51fbf4684b58cac6
+    name: castai-workload-autoscaler
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-workload-autoscaler-0.1.70/castai-workload-autoscaler-0.1.70.tgz
+    version: 0.1.70
   egressd:
   - apiVersion: v2
     appVersion: v0.14.0
@@ -277,4 +288,4 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
     version: 0.54.2
-generated: "2025-02-03T18:18:38.497838407Z"
+generated: "2025-02-03T20:11:53.531225+01:00"
