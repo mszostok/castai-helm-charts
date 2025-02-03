@@ -63,6 +63,17 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/castai-cluster-controller-0.78.5/castai-cluster-controller-0.78.5.tgz
     version: 0.78.5
+  castai-cluster-controller-ext:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2025-02-03T18:18:36.552407526Z"
+    description: castai-cluster-controller-ext.
+    digest: 9096f101290f7c8b87054a70773ea548aafe401c81b0efe8719773cdba954909
+    name: castai-cluster-controller-ext
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-cluster-controller-ext-0.1.0/castai-cluster-controller-ext-0.1.0.tgz
+    version: 0.1.0
   castai-db-optimizer:
   - apiVersion: v2
     created: "2025-02-03T18:18:31.752872293Z"
@@ -254,4 +265,4 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
     version: 0.54.2
-generated: "2025-02-03T18:18:34.745288616Z"
+generated: "2025-02-03T18:18:36.552422914Z"
