@@ -1,0 +1,246 @@
+apiVersion: v1
+entries:
+  castai-agent:
+  - apiVersion: v2
+    appVersion: v0.80.0
+    created: "2025-02-03T18:18:31.248269761Z"
+    description: CAST AI agent deployment chart.
+    digest: d75678d404cc039139f0d72c2e35707d31b1adee4d9627d4bdf2cb2c46896fb5
+    name: castai-agent
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-agent-0.95.0/castai-agent-0.95.0.tgz
+    version: 0.95.0
+  castai-ai-optimizer-proxy:
+  - apiVersion: v2
+    appVersion: v1.1.4
+    created: "2025-02-03T18:18:31.335431229Z"
+    description: CAST AI AI Optimizer Proxy deployment chart.
+    digest: 174b659c25782f62d71fe44f2da4a31496c6d2a2888938a6f1c3168e4c7a38cd
+    name: castai-ai-optimizer-proxy
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-ai-optimizer-proxy-0.0.15/castai-ai-optimizer-proxy-0.0.15.tgz
+    version: 0.0.15
+  castai-audit-logs-receiver:
+  - apiVersion: v2
+    appVersion: v0.4.1
+    created: "2025-02-03T18:18:31.475218907Z"
+    description: A Helm chart for CAST AI OpenTelemetry Collector.
+    digest: 5a0544f4f7b76b13a8d3f2a1dd81ecaa5ad0e6621ee603bded5bc3413a69088a
+    name: castai-audit-logs-receiver
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-audit-logs-receiver-0.4.3/castai-audit-logs-receiver-0.4.3.tgz
+    version: 0.4.3
+  castai-cloud-proxy:
+  - apiVersion: v2
+    appVersion: v0.0.12
+    created: "2025-02-03T18:18:31.587480164Z"
+    description: CAST AI cloud-proxy chart
+    digest: 23ec9f23648e7a4b2787ffcbb64e1c7315397a85f3f9f6f58f107d1c6806fcbf
+    name: castai-cloud-proxy
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-cloud-proxy-0.3.2/castai-cloud-proxy-0.3.2.tgz
+    version: 0.3.2
+  castai-cluster-controller:
+  - annotations:
+      release-date: 2024-06-04T07:10:07
+    apiVersion: v2
+    appVersion: v0.54.9
+    created: "2025-02-03T18:18:31.672680002Z"
+    dependencies:
+    - condition: castai-cluster-controller-ext.enabled
+      name: castai-cluster-controller-ext
+      repository: file://child-charts/castai-cluster-controller-ext
+      version: 0.1.0
+    description: Cluster controller is responsible for handling certain Kubernetes
+      actions such as draining and deleting nodes, adding labels, approving CSR requests.
+    digest: dbcf0e522e76030082acd1e32804b89bc3bbd98f7a3fa6ae1cac38cd6346d8a4
+    name: castai-cluster-controller
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-cluster-controller-0.78.5/castai-cluster-controller-0.78.5.tgz
+    version: 0.78.5
+  castai-db-optimizer:
+  - apiVersion: v2
+    created: "2025-02-03T18:18:31.752872293Z"
+    description: CAST AI database cache deployment.
+    digest: 8c2ab950ff1e514eeefa703816d0aaf96177051a49ff059fa2860a71f45e9c9d
+    name: castai-db-optimizer
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-db-optimizer-0.7.0/castai-db-optimizer-0.7.0.tgz
+    version: 0.7.0
+  castai-evictor:
+  - annotations:
+      release-date: 2025-02-03T11:21:39
+    apiVersion: v2
+    appVersion: 69a2c0cbe4617a2824ccad3a9afe302720952b5c
+    created: "2025-02-03T18:18:31.867347656Z"
+    dependencies:
+    - condition: castai-evictor-ext.enabled
+      name: castai-evictor-ext
+      repository: file://child-charts/castai-evictor-ext
+      version: 0.1.0
+    description: Cluster utilization defragmentation tool
+    digest: 47634e1164a0684123fc081264373877dcd51d663892ba035c89784b68c884f1
+    name: castai-evictor
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-evictor-0.31.30/castai-evictor-0.31.30.tgz
+    version: 0.31.30
+  castai-hibernate:
+  - apiVersion: v2
+    appVersion: v0.12
+    created: "2025-02-03T18:18:31.970353961Z"
+    description: CAST AI hibernate CronJobs used to pause and resume Kubernetes cluster
+      on a defined schedule.
+    digest: 266fb93a662dae84af8f83fe7c9b3381b33bf423a357e4f0ce1c9122e50d7aac
+    name: castai-hibernate
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-hibernate-0.2.9/castai-hibernate-0.2.9.tgz
+    version: 0.2.9
+  castai-hosted-model:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2025-02-03T18:18:32.053359044Z"
+    dependencies:
+    - name: ollama
+      repository: https://otwld.github.io/ollama-helm/
+      version: 1.4.0
+    description: CAST AI hosted model deployment chart. Currently, it's just a pass
+      through to ollama chart helm.
+    digest: 8d9ada03c67c01b3cda37618d194c1249ea70437d31499144d0c285fbe8056c1
+    name: castai-hosted-model
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-hosted-model-0.0.2/castai-hosted-model-0.0.2.tgz
+    version: 0.0.2
+  castai-pod-mutator:
+  - apiVersion: v2
+    appVersion: v0.0.7
+    created: "2025-02-03T18:18:32.148456228Z"
+    description: CAST AI Pod Mutator.
+    digest: 121e448b283ff3ec67bcdd8e8ff5a18b330c67b58bbd598b7773b551e6288fd0
+    name: castai-pod-mutator
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-pod-mutator-0.0.12/castai-pod-mutator-0.0.12.tgz
+    version: 0.0.12
+  castai-pod-node-lifecycle:
+  - apiVersion: v2
+    appVersion: v0.31.0
+    created: "2025-02-03T18:18:32.241847945Z"
+    description: CAST AI spot-only K8s webhook to control workload placement during
+      cluster migration and spot-only.
+    digest: fa2aeb24932aa10188804df786bfe51686ea2c26919806a80bcd947ea1225d28
+    name: castai-pod-node-lifecycle
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-pod-node-lifecycle-0.37.0/castai-pod-node-lifecycle-0.37.0.tgz
+    version: 0.37.0
+  castai-pod-pinner:
+  - apiVersion: v2
+    appVersion: v1.2.1
+    created: "2025-02-03T18:18:32.319907912Z"
+    dependencies:
+    - condition: castai-pod-pinner-ext.enabled
+      name: castai-pod-pinner-ext
+      repository: file://child-charts/castai-pod-pinner-ext
+      version: 1.0.1
+    description: CAST AI Pod Pinning deployment chart.
+    digest: 774513359f04ff1cf8b72d2e83cc0365698f971c4ea6cbe30e2e05d4641b3d2b
+    name: castai-pod-pinner
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-pod-pinner-1.1.1/castai-pod-pinner-1.1.1.tgz
+    version: 1.1.1
+  castai-scheduling-policies-controller:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2025-02-03T18:18:32.400168045Z"
+    description: CAST AI scheduling policies controller.
+    digest: 9c1a1294daa0b89603d79a70480b0334d56482d8eb39a6c63d3e89aa8d3baf39
+    name: castai-scheduling-policies-controller
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-scheduling-policies-controller-0.0.1/castai-scheduling-policies-controller-0.0.1.tgz
+    version: 0.0.1
+  castai-spot-handler:
+  - apiVersion: v2
+    appVersion: v0.16.0
+    created: "2025-02-03T18:18:32.494662621Z"
+    description: Spot Handler is the component responsible for scheduled events monitoring
+      and delivering them to the central platform.
+    digest: a772e5d84f5041c72ebe6f755cba0ea0a66520a5951546e12ccc7aacf0e46dc9
+    name: castai-spot-handler
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-spot-handler-0.25.0/castai-spot-handler-0.25.0.tgz
+    version: 0.25.0
+  egressd:
+  - apiVersion: v2
+    appVersion: v0.14.0
+    created: "2025-02-03T18:18:32.587769478Z"
+    description: Kubernetes aware network traffic monitoring
+    digest: d547767b8f469923dd5b5a3c6c42b96b6bdd1e1457e285d7b22ef82669c3480f
+    name: egressd
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/egressd-0.1.41/egressd-0.1.41.tgz
+    version: 0.1.41
+  gpu-metrics-exporter:
+  - apiVersion: v2
+    appVersion: 0.1.17
+    created: "2025-02-03T18:18:32.664151735Z"
+    description: A Helm chart for Kubernetes
+    digest: 4b384e65eeb902d6fea48f35e187303ee280e3f68753a2f46288ddcc044807a4
+    name: gpu-metrics-exporter
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/gpu-metrics-exporter-0.1.18/gpu-metrics-exporter-0.1.18.tgz
+    version: 0.1.18
+  temporal:
+  - apiVersion: v2
+    appVersion: 1.26.2
+    created: "2025-02-03T18:18:32.803788831Z"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: 0.14.3
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.22.0
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.17.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 8.0.2
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: ad5432c9807834242d6f2c1066b18733b9c8fce8c3c215edc66c5148bd5730b5
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: temporalio
+      url: https://temporal.io/
+    name: temporal
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
+    version: 0.54.2
+generated: "2025-02-03T18:18:32.803801384Z"
