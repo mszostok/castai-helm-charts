@@ -180,6 +180,18 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/castai-pod-pinner-1.1.1/castai-pod-pinner-1.1.1.tgz
     version: 1.1.1
+  castai-pod-pinner-ext:
+  - apiVersion: v2
+    appVersion: v1.0.1
+    created: "2025-02-03T18:18:38.497826104Z"
+    description: 'CAST AI Pod Pinner library chart with extra resources required for
+      chart auto-upgrade. '
+    digest: e6e73ed22e0f42a251bfda65ce4085cdcf0389f7d5a2be59f6c6348917a87635
+    name: castai-pod-pinner-ext
+    type: application
+    urls:
+    - https://github.com/mszostok/castai-helm-charts/releases/download/castai-pod-pinner-ext-1.0.1/castai-pod-pinner-ext-1.0.1.tgz
+    version: 1.0.1
   castai-scheduling-policies-controller:
   - apiVersion: v2
     appVersion: v0.0.1
@@ -265,4 +277,4 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
     version: 0.54.2
-generated: "2025-02-03T18:18:36.552422914Z"
+generated: "2025-02-03T18:18:38.497838407Z"
