@@ -7,6 +7,8 @@ on:
 
 jobs:
   release:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,7 +45,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release evictor child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -52,7 +54,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release cluster-controller child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -61,7 +63,7 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Release pod pinner child charts
         uses: helm/chart-releaser-action@6203d709ca237fb26b724837f2c53716f244ee8c
@@ -70,4 +72,4 @@ jobs:
           config: cr.yaml
           skip_existing: true
         env:
-          CR_TOKEN: "${{ secrets.PAT_CICD }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
