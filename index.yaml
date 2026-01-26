@@ -406,6 +406,17 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/castai-watchdog-0.2.275/castai-watchdog-0.2.275.tgz
     version: 0.2.275
+  castai-workload-autoscaler:
+  - apiVersion: v2
+    appVersion: helm-chart-sync
+    created: "2026-01-26T13:01:20.028215056Z"
+    description: CAST AI workload autoscaler.
+    digest: fcb35a58033f310020b1db2dd0591d1f93ecb3dab2e6e4f7d409937dabb4674f
+    name: castai-workload-autoscaler
+    type: application
+    urls:
+    - https://github.com/castai/helm-charts/releases/download/castai-workload-autoscaler-0.1.157/castai-workload-autoscaler-0.1.157.tgz
+    version: 0.1.157
   egressd:
   - apiVersion: v2
     appVersion: v0.14.2
@@ -488,4 +499,4 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
     version: 0.54.2
-generated: "2026-01-21T21:17:35.066800521Z"
+generated: "2026-01-26T13:01:20.02849734Z"
