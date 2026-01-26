@@ -3,4 +3,4 @@ name: castai-workload-autoscaler
 description: CAST AI workload autoscaler.
 type: application
 version: 0.1.157
-appVersion: "helm-chart-sync"
+appVersion: "0.0.999"
