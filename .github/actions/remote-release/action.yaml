@@ -156,7 +156,7 @@ runs:
         git checkout helm-chart-sync
         git add ${{ inputs.chart-path }}/Chart.yaml
         git commit -m "[Release] Update Chart.yaml"
-#        git push
+        git push
 
     - name: Summary
       shell: bash
