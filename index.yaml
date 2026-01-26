@@ -417,6 +417,17 @@ entries:
     urls:
     - https://github.com/castai/helm-charts/releases/download/castai-workload-autoscaler-0.1.157/castai-workload-autoscaler-0.1.157.tgz
     version: 0.1.157
+  castai-workload-autoscaler-exporter:
+  - apiVersion: v2
+    appVersion: helm-chart-sync
+    created: "2026-01-26T18:56:12.792845736Z"
+    description: CAST AI workload autoscaler exporter.
+    digest: 21ff3cb0b1350fecf05954f6dfbfc21543f5e285ec51d6bdf9cc2436b786220a
+    name: castai-workload-autoscaler-exporter
+    type: application
+    urls:
+    - https://github.com/castai/helm-charts/releases/download/castai-workload-autoscaler-exporter-0.0.79/castai-workload-autoscaler-exporter-0.0.79.tgz
+    version: 0.0.79
   egressd:
   - apiVersion: v2
     appVersion: v0.14.2
@@ -499,4 +510,4 @@ entries:
     urls:
     - https://github.com/mszostok/castai-helm-charts/releases/download/temporal-0.54.2/temporal-0.54.2.tgz
     version: 0.54.2
-generated: "2026-01-26T13:01:20.02849734Z"
+generated: "2026-01-26T18:56:12.792887414Z"
